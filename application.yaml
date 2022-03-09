@@ -1,0 +1,39 @@
+
+spring.application.name: betterreads-data-loader
+
+datadump.location:
+              author: /Users/kartikkulkarni/Desktop/ol_dump_authors.txt
+              works: /Users/kartikkulkarni/Desktop/ol_dump_works.txt
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: main
+      username: dhGMAPwTzbuklHpLUEDUywFC
+      password: JR7p1XH01zwIGqfrXZ1wr5HLZDajIe-Z_xmD,_XBZ-AsNDLSgJeN3LhflU83,j09E+ut3TyKGabI5XHckTzo0+Q9iZNjT-4.Ww4-On9L2rmkwm,cTGj2SibXJ9gbtTvB
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s 
+
+
+  main:
+    allow-circular-references: true
+    allow-bean-definition-overriding: true
+        
+
+datastax.astra:
+    secure-connect-bundle: secure-connect.zip
+
+
+
+astra.db:
+        id: 108bb22b-9b24-43f0-ac21-44dab82d84d6-1
+        region: asia-south1
+        keyspace: main
+        application.token: AstraCS:dhGMAPwTzbuklHpLUEDUywFC:71f151ab39340523a0820692e122a1821980e6a2547269edc40c24eb275af246
+
+
+  
